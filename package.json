@@ -5,11 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "sh deploy.sh"
+    "deploy": "sh deploy.sh",
+    "production": "vue-cli-service serve --mode production"
   },
   "dependencies": {
     "axios": "^0.21.1",
     "bulma": "^0.9.3",
+    "cors-anywhere": "^0.4.4",
     "vue": "^3.0.0",
     "vue-router": "^4.0.10",
     "vuex": "^4.0.0-0"

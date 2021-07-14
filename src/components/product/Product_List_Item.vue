@@ -4,7 +4,7 @@
         <div class="d-flex justify-center">
                 <img
                         max-width="65%"
-                        :src="`https://belle-livre-48148.herokuapp.com/img/products/${productItem.image_tag}.jpg`"
+                        :src="`http://localhost:5000/img/products/${productItem.image_tag}.jpg`"
                 />
             </div>
         <div class="content">
