@@ -13,7 +13,7 @@ const actions = {
     getProductItems({
         commit
     }) {
-        axios.get(`/api/products`).then((response) => {
+        axios.get(`https://belle-livre-48148.herokuapp.com/products`).then((response) => {
             commit('UPDATE_PRODUCT_ITEMS', response.data)
         });
     }
