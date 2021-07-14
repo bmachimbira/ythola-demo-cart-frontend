@@ -14,29 +14,37 @@ const actions = {
     getCartItems({
         commit
     }) {
-        axios.get('http://localhost:5000/cart').then((response) => {
+        axios.get('https://belle-livre-48148.herokuapp.com/cart').then((response) => {
             commit('UPDATE_CART_ITEMS', response.data)
+        }).catch((err) => {
+            console.log(err)
         });
     },
     addCartItem({
         commit
     }, cartItem) {
-        axios.post('http://localhost:5000/cart', cartItem).then((response) => {
+        axios.post('https://belle-livre-48148.herokuapp.com/cart', cartItem).then((response) => {
             commit('UPDATE_CART_ITEMS', response.data)
+        }).catch((err) => {
+            console.log(err)
         });
     },
     removeCartItem({
         commit
     }, cartItem) {
-        axios.delete('http://localhost:5000/cart/delete', cartItem).then((response) => {
+        axios.delete('https://belle-livre-48148.herokuapp.com/cart/delete', cartItem).then((response) => {
             commit('UPDATE_CART_ITEMS', response.data)
+        }).catch((err) => {
+            console.log(err)
         });
     },
     removeAllCartItems({
         commit
     }) {
-        axios.delete('http://localhost:5000/cart/delete/all').then((response) => {
+        axios.delete('https://belle-livre-48148.herokuapp.com/cart/delete/all').then((response) => {
             commit('UPDATE_CART_ITEMS', response.data)
+        }).catch((err) => {
+            console.log(err)
         });
     }
 }
