@@ -1,13 +1,5 @@
 module.exports = {
-    devServer: {
-      proxy: {
-        '/api': {
-          target: 'https://belle-livre-48148.herokuapp.com/',
-          changeOrigin: true,
-          pathRewrite: {
-            '^/api': ''
-          }
-        }
-      }
-    }
-  }
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/ythola-demo-cart-frontend/'
+  : '/'
+}
