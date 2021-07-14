@@ -7,8 +7,10 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "bulma": "^0.9.3",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.0-0",
+    "vue-router": "^4.0.10",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
@@ -16,5 +18,12 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0"
-  }
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "keywords": [
+    "node",
+    "heroku"
+  ]
 }
