@@ -20,7 +20,7 @@
       <br>
     </ul>
     <div class="buttons">
-      <button :disabled="!cartItems.length" class="button is-info" onclick="makePayment.performClick(this.cartTotal);">
+      <button :disabled="!cartItems.length" class="button is-info" onclick="makePayment.performClick(cartTotal);">
         Checkout (<span class="has-text-weight-bold">R{{ cartTotal }}</span>)
       </button>
 
