@@ -21,7 +21,7 @@
     </ul>
     <div class="buttons">
     <button :disabled="!cartItems.length" class="button is-info">
-      Checkout (<span class="has-text-weight-bold">${{ cartTotal }}</span>)
+      Checkout (<span class="has-text-weight-bold">R{{ cartTotal }}</span>)
     </button>
 
  <button class="button is-danger is-outlined" @click="removeAllCartItems">
