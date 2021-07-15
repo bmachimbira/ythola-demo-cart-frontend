@@ -14,7 +14,7 @@ const actions = {
     getCartItems({
         commit
     }) {
-        axios.get('https://belle-livre-48148.herokuapp.com/cart').then((response) => {
+        axios.get('https://fast-beach-14713.herokuapp.com/cart').then((response) => {
             commit('UPDATE_CART_ITEMS', response.data)
         }).catch((err) => {
             console.log(err)
@@ -23,7 +23,7 @@ const actions = {
     addCartItem({
         commit
     }, cartItem) {
-        axios.post('https://belle-livre-48148.herokuapp.com/cart', cartItem).then((response) => {
+        axios.post('https://fast-beach-14713.herokuapp.com/cart', cartItem).then((response) => {
             commit('UPDATE_CART_ITEMS', response.data)
         }).catch((err) => {
             console.log(err)
@@ -32,7 +32,7 @@ const actions = {
     removeCartItem({
         commit
     }, cartItem) {
-        axios.delete('https://belle-livre-48148.herokuapp.com/cart/delete', cartItem).then((response) => {
+        axios.delete('https://fast-beach-14713.herokuapp.com/cart/delete', cartItem).then((response) => {
             commit('UPDATE_CART_ITEMS', response.data)
         }).catch((err) => {
             console.log(err)
@@ -41,7 +41,7 @@ const actions = {
     removeAllCartItems({
         commit
     }) {
-        axios.delete('https://belle-livre-48148.herokuapp.com/cart/delete/all').then((response) => {
+        axios.delete('https://fast-beach-14713.herokuapp.com/cart/delete/all').then((response) => {
             commit('UPDATE_CART_ITEMS', response.data)
         }).catch((err) => {
             console.log(err)
