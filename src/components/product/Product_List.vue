@@ -1,7 +1,7 @@
 <template>
   <div class="container is-fluid">
-    <div class="tile is-ancestor">
-      <div class="tile is-parent" v-for="productItem in productItems" :key="productItem.id">
+    <div class="tile is-ancestor" >
+      <div class="tile is-parent" style="float:left" v-for="productItem in productItems" :key="productItem.id">
       <ProductListItem :productItem="productItem"/>
       </div>
     </div>

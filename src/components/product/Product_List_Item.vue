@@ -3,7 +3,7 @@
       <div class="card-content">
         <div class="d-flex justify-center">
                 <img
-                        max-width="65%"
+                        max-width="30px"
                         :src="`https://belle-livre-48148.herokuapp.com/img/products/${productItem.image_tag}.jpg`"
                 />
             </div>
@@ -44,3 +44,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+img {
+  max-width: 60%;
+}
+</style>
